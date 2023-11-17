@@ -1,0 +1,408 @@
+This document contains questions to test knowledge on subject areas to do with working as a data engineer, MLOps engineer and software engineer.
+
+This knowledge is just as important as being able to pass logic and coding questions. Got to Section \ref{sec:practical_problems} for a list of resources to use to test logic, brainteasers and coding questions.
+
+\tableofcontents
+
+\section{Practical questions} \label{sec:practical_problems}
+
+These are some references for practical problems to work through. Aim to spent $80\%$ of interview prep time working on practical problems described in the references below.
+\begin{itemize}
+    \item Use \cite{hots} as a reference for brainteasers, logic problems and statistical questions.
+    \item Use \cite{ctci} as a reference for software engineering problems as well as general interview prep.
+\end{itemize}
+
+Recommended way of working:
+\begin{enumerate}
+    \item Review question answers from the day before and double check them.
+    \item Iterate over questions from a given problem domain.
+    \item Log the problem domain, questions passed and failed.
+    \item Iterate over problem domains but do always review the failed questions from the previous session. Practice recall is the name of the game.
+\end{enumerate}
+
+Currently logging work on \href{https://github.com/TAJD/professional/issues/4}{this GitHub issue}.
+
+\section{Software engineering}
+
+\subsection{Management}
+
+\begin{questions}
+\question What does \textbf{agile} mean in the context of software development?
+\begin{solution}
+\begin{itemize}
+    \item A process for discovering requirements and solutions improvement through the collaborative effort of self-organizing and cross-functional teams with their end users.
+    \item Popularised in the \href{http://agilemanifesto.org/}{Agile manifesto}
+    \item Underpins Kanban and Scrum.
+\end{itemize}
+\end{solution}
+
+\question[4] What are lean management practices?
+\begin{solution}
+\begin{itemize}
+    \item Limit Work in Progress (WIP)
+    \item Visual management
+    \item Feedback from production
+    \item Lightweight change approvals
+\end{itemize}
+Reference \cite[p.~76]{accel}
+\end{solution}
+
+\question[4] What are the components of Lean Product Management?
+\begin{solution}
+\begin{itemize}
+    \item Work in small batches
+    \item Make flow of work visible
+    \item Gather and implement customer Feedback
+    \item Team experimentation
+\end{itemize}
+Reference \cite[p.~85]{accel}
+\end{solution}
+
+\question[6] What are common factors that lead to burnout?
+\begin{solution}
+\begin{itemize}
+    \item Work overload: job demands exceed human limits.
+    \item Lack of control: inability to influence decisions that affect your job.
+    \item Insufficient rewards: insufficient financial, institutional, or social rewards.
+    \item Breakdown of community: unsupportive workplace environment.
+    \item Absence of fairness: lack of fairness in decision-making processes.
+    \item Value conflicts: mismatch in organizational values and the individuals values.
+\end{itemize}
+Reference \cite[p.~96]{accel}
+\end{solution}
+
+\question[5] How can you reduce or fight burnout?
+\begin{solution}
+\begin{itemize}
+    \item Organizational culture. Managers are responsible for fostering a supportive and respectful work enviroment, and they can do so by creating a blame free environment, striving to learn from failures, and communicating a shared sense of purpose. Human error is never the root cause of failure in systems.
+    \item Deployment pain. Managers and leaders should ask their teams how painful their deployments are and fix the things that hurt the most.
+    \item Effectiveness of leaders. Responsibilities of a team leader include limiting work in process and eliminating roadblocks for the team so they can get their work done.
+    \item Organizational investment in DevOps.
+    \item Organizational performance. Lean management and continuous delivery practices help improve software delivering performance, which in turn improves organizational perforamcne.
+\end{itemize}
+\end{solution}
+
+\question What factors can you use to select software?
+\begin{solution}
+\cite[p.~119]{fode}
+\end{solution}
+\end{questions}
+
+\subsection{Principles}
+
+\begin{questions}
+\question[2] How can you classify tests?
+\begin{solution}
+You can classify tests on two main dimensions:
+\begin{itemize}
+    \item Size. Size refers to the resources consumed by a test and what it is allowed to do.
+    \item Scope. Scope refers to how much code a test is intended to validate.
+\end{itemize}
+\end{solution}
+
+\question[5]What is a unit test? What are some properties of unit testing?
+\begin{solution}
+A unit test can refer to a test of narrow scope, such as of a single class or method. Unit tests are usually small in size, but that's not always the case.
+
+Some properties of unit tests are that:
+\begin{itemize}
+    \item They tend to be small, which helps them be fast and deterministic.
+    \item They can be easy to write at the same time as the code they're testing.
+    \item They promote high levels of test coverage as a consequence of the previous two factors.
+    \item They tend to make it easy to understand what's wrong when they fail.
+    \item They can serve as documentation and examples.
+\end{itemize}
+Reference \cite[Chapter~17]{seg}
+\end{solution}
+\end{questions}
+
+\section{ML and ML Ops}
+\begin{questions}
+\question What are the key distance metrics you can use when comparing vectors?
+\begin{solution}
+\begin{itemize}
+    \item Minkowski distance: $( \sum^n_{i=1} |X_i - Y_i |^p )^{(1/p)}$
+    \begin{itemize}
+        \item When $p=1$ this becomes the Manhattan distance - i.e. the distance you'd travel if you had to walk the blocks to get there
+        \item When $p=2$ it becomes the Euclidean distance which would be the straight line distance/distance as the crow flies.
+    \end{itemize}
+    \item Cosine distance: $S_C(A, B):= cos(\Theta) = \frac{A \cdot B}{\|A\| \|B\| } = \frac{\sum^n_{i=1} A_i B_i}{\sqrt{\sum^n_{i=1}A^{2}_i} \cdot \sqrt{\sum^n_{i=1}B^{2}_i}}$
+    \begin{itemize}
+        \item This is a measure of similarity between two non-zero vectors defined in an inner product space.
+        \item It doesn't depend on the magnitude of the vectors.
+        \item In informational retrieval and text mining, each document could be represented by the vector of the numbers of occurences of each work therefore cosine similarity would give a useful measure of how similar two documents are likely to be independent of the length of the documents. Presumably that would depend on how the documents/sentences/words would have been vectorized.
+    \end{itemize}
+\end{itemize}
+\end{solution}
+\end{questions}
+
+\section{Data engineering}
+
+\subsection{Principles and concepts}
+
+\begin{questions}
+
+\question What are the differences between a column orientated database (DBMS) and a row orientated database?
+\begin{solution}
+Describe properties of both and give examples.
+\end{solution}
+
+\question What are the differences between a relational and document databases?
+\begin{solution}
+Relational database and document database definitions:
+\begin{itemize}
+    \item A relational database is based on a relational document model where data is organised into relations, also known as tables, and each relation is an unordered collection of tuples. The data is normalised in order to minimise the number of locations different data might need to be updated. An example is Postgres.
+    \item Document database stores nested records. An example is Elasticsearch.
+\end{itemize}
+Here are some ways they can be compared:
+\begin{itemize}
+    \item Fault tolerance
+    \item Concurrency. 
+    \item Which data model will lead to simpler code? Document databases may have issues with joins or referring to deeply nested objects.
+    \item How can schema flexibility in the document model enable functionality? What if one of the fields needed to be updated? In a document data model new documents would have to be written whereas a relational data model would require a migration to add a column in the right table.
+    \item Data locality for queries. If the application often needed to access the entire document then a document data model would make sense.
+\end{itemize}
+\cite[p.~38]{ddia}
+\end{solution}
+
+\question What properties does an ACID transaction have?
+\begin{solution}
+\begin{itemize}
+    \item Atomicity. Transactions are often composed of multiple statements. Atomicity guarantees that each statement is treated as a single unit, which either succeeds or fails completedly. If any of the statements in a transaction fail then the entire transaction fails. This prevents partial updates.
+    \item Consistency. Consistentcy ensures that a transaction can only bring the database from one consistent state to another, preserving database invariants.
+    \item Isolation. Isolation ensures that concurrent execution of transactions leaves the database in the same state that would have been obtained if the transactions were executed sequentially.
+    \item Durability. Durability guarantees that once a transaction has been committed, it will remain committed even in the case of a system failure. This usually means that only completed transactions (or effects) are recorded in non-volatile memory.
+\end{itemize}
+\end{solution}
+
+\question What are the differences between an OLTP and an OLAP system?
+\begin{solution}
+\begin{itemize}
+    \item An Online Transaction Processing (OLTP) system is a database that reads and writes records at a high rate.
+    \begin{itemize}
+        \item These systems are typically referred to as transactional databases, but that does not imply that the system in question supports atomic transactions.
+        \item Generally speaking these systems support low latency and high concurrency.
+        \item OLTP databases work well as application backends when thousands or millions of users can be interacting with the application simultaneously.
+    \end{itemize}
+    \item An Online Analytical Processing (OLAP) system is built to run large analytics queries and is typically inefficient at handling lookups of individual records.
+    \begin{itemize}
+        \item The Online part of OLAP implies that the system is continually scanning for incoming queries, making the system suitable for interactive analytics.
+        \item High latency queries with low latency lookups.
+        \item Snowflake/BigQuery -> columnar databases?
+    \end{itemize}
+\end{itemize}   
+\end{solution}
+
+\question How should you evaluate which storage abstraction should be used?
+\begin{solution}
+\begin{itemize}
+    \item Purpose and use case: What purpose and use case the data will be used for?
+    \item Update pattern: Is the abstraction optimized for bulk updates, streaming inserts, or upserts?
+    \item Cost: What are the direct and indirect financial costs? Time to value? The opportunity costs?
+    \item Seperate storage and compute: The trend is toward seperating storage and compute but most systems hybridize seperation and colocation. This means that the lines between OLAP databases and data lakes are blurring.
+\end{itemize}
+Reference \cite[p.~219]{fode}
+\end{solution}
+
+\question What is a data warehouse?
+\begin{solution}
+\begin{itemize}
+\item Data warehouses are standard OLAP data architecture.
+\item Data warehouses can refer to: 
+\begin{enumerate}
+    \item Technology platforms such as Google BigQuery and Teradata
+    \item An architecture for data centralization
+    \item An organisational pattern within a company
+\end{enumerate}
+\item In practice, data warehouses are used to organize data into a data lake. 
+\item Cloud data warehouses can be coupled with object storage to provide a complete data-lake solution.
+\end{itemize}
+\end{solution}
+
+\question What is a data lake?
+
+\begin{solution}
+\begin{itemize}
+\item The \textit{data lake} was concieved of as a massive store where data was retained in raw, unprocessed form.
+\item The last 5 years has seen two major developments:
+\begin{enumerate}
+    \item A migration towards sepeartion of compute and storage.
+    \item Discovery that functionality such as schema management dismissed in the move to data lakes was, in face, extremely useful.
+\end{enumerate}
+\end{itemize}
+Reference \cite[p.~220]{fode}.
+\end{solution}
+
+\question What is a data lakehouse?
+\begin{solution}
+A data lakehouse is an architecture that combines aspects of the data warehouse and the data lake. A lakehouse stores data in object storage but also adds arrangement features designed to streamline data management and enhance engineering experience, e.g. schema management and features for managing updates/deletes.
+Reference \cite[p.~220]{fode}.
+\end{solution}
+\end{questions}
+
+\subsection{Tooling}
+
+\begin{questions}
+\question[1] What is docker?
+\begin{solution}
+
+\end{solution}
+
+\question[1] What is terraform?
+\begin{solution}
+
+\end{solution}
+\end{questions}
+
+\section{Python}
+
+Questions on Python programming all the way to niche Python behaviour.
+
+\subsection{General knowledge}
+
+\begin{questions}
+\question Can you hash a set?
+\begin{solution}
+\begin{itemize}
+    \item No you can't because a set, as well as a list and a dict are all mutable and therefore unhashable.
+    \item If you want to make sure they're hashable then you need to make them immutable \href{https://eng.lyft.com/hashing-and-equality-in-python-2ea8c738fb9d}{REF}.
+\end{itemize}
+\end{solution}
+
+\question What is monkey patching?
+\begin{solution}
+\begin{itemize}
+    \item Monkey patching is dynamically updating a method at runtime.
+    \item It means that it's possible to modify the behaviour of some source code without editing that source code directly.
+\end{itemize}
+\end{solution}
+
+\question How does Python work under the hood?
+\begin{solution}
+It uses Cython. Here's a \href{https://realpython.com/cpython-source-code-guide/}{guide}.
+\end{solution}
+
+\question What are Python decorators?
+\begin{solution}
+A specific change made in Python syntax to alter functions easily.
+\end{solution}
+
+\question What is the difference between a list and a tuple?
+\begin{solution}
+A tuple is not mutable but can be hashed. Lists are mutable.
+\end{solution}
+
+\question What is the Global Interpreter Lock?
+\begin{solution}
+The GIL is a construct that ensures that only one thread is executed at any given time. A thread acquires the GIL and then performs work before passing it to the next thread.
+\end{solution}
+
+\question What is the difference between range and xrange?
+\begin{solution}
+\begin{itemize}
+    \item Both return sequences of numbers.
+    \item range returns a list.
+    \item xrange returns a generator
+\end{itemize}
+\end{solution}
+
+\question What is a generator and why is it useful?
+\begin{solution}
+\begin{itemize}
+    \item A generator is a function that returns an iterator that produces a sequence of values when iterated over.
+    \item Generators are useful when you want to generate a sequence but you don't want to store it all in memory.
+\end{itemize}
+\end{solution}
+
+\question[4] Describe the different types of inheritance.
+\begin{solution}
+\begin{itemize}
+    \item Single inheritance, where a derived or child class inherits properties from a single parent class.
+    \item Multiple inheritance, when a class can be derived from more than one base class.
+    \item Multilevel inheritance, where features of the base class and the derived class are further inherited into the new derviced class.
+    \item Hierarchical inheritance, when more than one derived class are created from a single base.
+\end{itemize}
+\end{solution}
+
+\question[3] What is a deep copy and what is a shallow copy and when is the difference relevant?
+\begin{solution}
+\begin{itemize}
+    \item A shallow copy constructs a new compound object and then inserts references into it to the objects found in the original.
+    \item A deep copy constructs a new compound object and then, recursively, inserts copies into it of the objects found in the original.
+    \item The difference between shallow and deep copying is only relevant for compound objects - objects that contain other objects.
+\end{itemize}
+\end{solution}
+
+\question[2] What problems can exist with deep copy operations that don't exist with shallow copy operations?
+\begin{solution}
+\begin{itemize}
+    \item Recursive objects (compound objects that directly or indirectly contain a reference to themselves) may cause a recursive loop.
+    \item Because deep copy copies everything it may copy too much, such as data which is intended to be shared between copies.
+\end{itemize}
+\href{https://docs.python.org/3/library/copy.html}{Python copy documentation.}
+\end{solution}
+
+\question[2] What are local and global namespaces?
+\begin{solution}
+\begin{itemize}
+    \item Local namespaces are defined inside a block of code and are only accessible inside the block.
+    \item Global namespaces includes names from various imported modules that are being used in a project. It lasts until the script ends.
+\end{itemize}
+\end{solution}
+
+\question What is the difference between a module and a package?
+\begin{solution}
+\begin{itemize}
+    \item A module is a single file containing python code.
+    \item A package is a collection of modules that are organised in a directory hierarchy.
+\end{itemize}
+\end{solution}
+
+\question What are abstract base classes and why are they useful?
+\begin{solution}
+\href{https://docs.python.org/3/library/abc.html}{Python ABC Docs.}
+\end{solution}
+\end{questions}
+
+References for these questions include my head, actual interview questions and \cite{Hackr23}.
+
+\subsection{Pandas}
+
+\begin{questions}
+\question What types of merge exist and how are they used?
+\begin{solution}
+
+\end{solution}
+\end{questions}
+
+\section{SQL}
+
+\begin{questions}
+\question What types of join exist and how are they used?
+\begin{solution}
+
+\end{solution}
+\end{questions}
+
+\section{Maths}
+
+\subsection{Useful algorithms}
+
+\begin{questions}
+
+\question Write a function to convert an arabic number to roman numerals.
+\begin{solution}
+\url{https://medium.com/@tomas.langkaas/eight-algorithms-for-roman-numerals-b06c83db12dd}
+\end{solution}
+
+\end{questions}
+
+\subsection{Big O notation}
+
+https://github.com/Devinterview-io/big-o-notation-interview-questions
+
+\subsection{Useful numbers}
+
+https://www.techinterviewhandbook.org/algorithms/math/
+
+Double check cracking the coding interview.

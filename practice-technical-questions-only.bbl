@@ -1,0 +1,223 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global}
+    \entry{accel}{book}{}
+      \name{author}{2}{}{%
+        {{hash=7f7a3b71ff8f677bb23ad0facf23129a}{%
+           family={Nicole\bibnamedelima Forsgren},
+           familyi={N\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Jez\bibnamedelima Humble},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=8e1c949be5801a6f56b7ac5df47a58a9}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Gene},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IT Revolution}%
+      }
+      \strng{namehash}{41012e476fe76e4d1c4ae01b88a586fd}
+      \strng{fullhash}{41012e476fe76e4d1c4ae01b88a586fd}
+      \strng{bibnamehash}{41012e476fe76e4d1c4ae01b88a586fd}
+      \strng{authorbibnamehash}{41012e476fe76e4d1c4ae01b88a586fd}
+      \strng{authornamehash}{41012e476fe76e4d1c4ae01b88a586fd}
+      \strng{authorfullhash}{41012e476fe76e4d1c4ae01b88a586fd}
+      \field{labelalpha}{NK18}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Accelerate: Building and Scaling High Performing Technology Organiztions}
+      \field{year}{2018}
+    \endentry
+    \entry{ddia}{book}{}
+      \name{author}{1}{}{%
+        {{hash=34b8d5b1d29d175527a6642f3ec8a76d}{%
+           family={Kleppmann},
+           familyi={K\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly}%
+      }
+      \strng{namehash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{fullhash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{bibnamehash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{authorbibnamehash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{authornamehash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{authorfullhash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \field{labelalpha}{Kle19}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{7}
+      \field{title}{Designing Data-Intensive Applications}
+      \field{year}{2019}
+    \endentry
+    \entry{ctci}{book}{}
+      \name{author}{1}{}{%
+        {{hash=58c63f99e5f9f02106e974040766ee63}{%
+           family={McDowell},
+           familyi={M\bibinitperiod},
+           given={Gayle\bibnamedelima Laakmann},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CareerCup}%
+      }
+      \strng{namehash}{58c63f99e5f9f02106e974040766ee63}
+      \strng{fullhash}{58c63f99e5f9f02106e974040766ee63}
+      \strng{bibnamehash}{58c63f99e5f9f02106e974040766ee63}
+      \strng{authorbibnamehash}{58c63f99e5f9f02106e974040766ee63}
+      \strng{authornamehash}{58c63f99e5f9f02106e974040766ee63}
+      \strng{authorfullhash}{58c63f99e5f9f02106e974040766ee63}
+      \field{labelalpha}{McD19}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{6}
+      \field{title}{Cracking the Coding Interview}
+      \field{year}{2019}
+    \endentry
+    \entry{seg}{book}{}
+      \name{author}{2}{}{%
+        {{hash=cc6564a8e3e82012a9ac8805de01f325}{%
+           family={Titus\bibnamedelima Winters},
+           familyi={T\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Tom\bibnamedelima Manshreck},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d8a2d0f127ca57a5fb12ee52da8fe63e}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Hyrum},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly}%
+      }
+      \strng{namehash}{141853d81433f7b1a504b256d8992187}
+      \strng{fullhash}{141853d81433f7b1a504b256d8992187}
+      \strng{bibnamehash}{141853d81433f7b1a504b256d8992187}
+      \strng{authorbibnamehash}{141853d81433f7b1a504b256d8992187}
+      \strng{authornamehash}{141853d81433f7b1a504b256d8992187}
+      \strng{authorfullhash}{141853d81433f7b1a504b256d8992187}
+      \field{labelalpha}{TW20}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Software Engineering at Google}
+      \field{year}{2020}
+    \endentry
+    \entry{hots}{book}{}
+      \name{author}{1}{}{%
+        {{hash=63e6eab9e64f4ba4e0caea29eef8a9c5}{%
+           family={Crack},
+           familyi={C\bibinitperiod},
+           given={Timothy\bibnamedelima Falcon},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly}%
+      }
+      \strng{namehash}{63e6eab9e64f4ba4e0caea29eef8a9c5}
+      \strng{fullhash}{63e6eab9e64f4ba4e0caea29eef8a9c5}
+      \strng{bibnamehash}{63e6eab9e64f4ba4e0caea29eef8a9c5}
+      \strng{authorbibnamehash}{63e6eab9e64f4ba4e0caea29eef8a9c5}
+      \strng{authornamehash}{63e6eab9e64f4ba4e0caea29eef8a9c5}
+      \strng{authorfullhash}{63e6eab9e64f4ba4e0caea29eef8a9c5}
+      \field{labelalpha}{Cra21}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{22}
+      \field{title}{Heard on The Street: Quantitative Questions from Wall Street Job Interviews}
+      \field{year}{2021}
+    \endentry
+    \entry{fode}{book}{}
+      \name{author}{2}{}{%
+        {{hash=5752f293020a9b8355d7d5333b3391d9}{%
+           family={Reiss},
+           familyi={R\bibinitperiod},
+           given={Joe},
+           giveni={J\bibinitperiod}}}%
+        {{hash=83410206f9fb9c3c8d22d2022263d74a}{%
+           family={Housley},
+           familyi={H\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly}%
+      }
+      \strng{namehash}{391a969c1713df5b0daab75413abf517}
+      \strng{fullhash}{391a969c1713df5b0daab75413abf517}
+      \strng{bibnamehash}{391a969c1713df5b0daab75413abf517}
+      \strng{authorbibnamehash}{391a969c1713df5b0daab75413abf517}
+      \strng{authornamehash}{391a969c1713df5b0daab75413abf517}
+      \strng{authorfullhash}{391a969c1713df5b0daab75413abf517}
+      \field{labelalpha}{RH22}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Fundamentals of Data Engineering}
+      \field{year}{2022}
+    \endentry
+    \entry{Hackr23}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4521d2cebaf63ecf2ff462d65c15c133}{%
+           family={Hackr.IO},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{4521d2cebaf63ecf2ff462d65c15c133}
+      \strng{fullhash}{4521d2cebaf63ecf2ff462d65c15c133}
+      \strng{bibnamehash}{4521d2cebaf63ecf2ff462d65c15c133}
+      \strng{authorbibnamehash}{4521d2cebaf63ecf2ff462d65c15c133}
+      \strng{authornamehash}{4521d2cebaf63ecf2ff462d65c15c133}
+      \strng{authorfullhash}{4521d2cebaf63ecf2ff462d65c15c133}
+      \field{labelalpha}{Hac23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Python Interview Questions}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://hackr.io/blog/python-interview-questions
+      \endverb
+      \verb{url}
+      \verb https://hackr.io/blog/python-interview-questions
+      \endverb
+      \warn{\item online entry 'Hackr23' (references.bib): Invalid format '30/10/2023' of date field 'urldate' - ignoring}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

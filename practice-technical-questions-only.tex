@@ -1,0 +1,30 @@
+\documentclass[12pt]{exam}
+\usepackage[margin=2cm]{geometry}
+\usepackage{times}
+\usepackage{hyperref}
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{references.bib}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=red,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Practice technical questions},
+    pdfpagemode=FullScreen,
+    }
+
+\usepackage{subfiles}
+
+\title{Practice technical questions}
+\author{Thomas Dickson}
+
+\begin{document}
+\maketitle
+\subfile{practice-technical-questions.tex}
+\printbibliography
+\end{document}
