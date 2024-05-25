@@ -1,5 +1,5 @@
 
-MEMO_FLAGS=-f markdown+yaml_metadata_block --template templates/memo.latex --wrap=preserve -o
+MEMO_FLAGS=-f markdown+yaml_metadata_block --template memo.latex --wrap=preserve -o
 
 technical-questions:=real-technical-questions.pdf
 $(technical-questions):
