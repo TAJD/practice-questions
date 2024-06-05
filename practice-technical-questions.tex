@@ -50,7 +50,7 @@ Reference \cite[p.~76]{accel}
 \begin{itemize}
     \item Work in small batches
     \item Make flow of work visible
-    \item Gather and implement customer Feedback
+    \item Gather and implement customer feedback
     \item Team experimentation
 \end{itemize}
 Reference \cite[p.~85]{accel}
@@ -72,11 +72,11 @@ Reference \cite[p.~96]{accel}
 \question[5] How can you reduce or fight burnout?
 \begin{solution}
 \begin{itemize}
-    \item Organizational culture. Managers are responsible for fostering a supportive and respectful work enviroment, and they can do so by creating a blame free environment, striving to learn from failures, and communicating a shared sense of purpose. Human error is never the root cause of failure in systems.
+    \item Organizational culture. Managers are responsible for fostering a supportive and respectful work environment, and they can do so by creating a blame free environment, striving to learn from failures, and communicating a shared sense of purpose. Human error is never the root cause of failure in systems.
     \item Deployment pain. Managers and leaders should ask their teams how painful their deployments are and fix the things that hurt the most.
     \item Effectiveness of leaders. Responsibilities of a team leader include limiting work in process and eliminating roadblocks for the team so they can get their work done.
     \item Organizational investment in DevOps.
-    \item Organizational performance. Lean management and continuous delivery practices help improve software delivering performance, which in turn improves organizational perforamcne.
+    \item Organizational performance. Lean management and continuous delivery practices help improve software delivering performance, which in turn improves organizational performance.
 \end{itemize}
 \end{solution}
 
@@ -128,9 +128,14 @@ Reference \cite[Chapter~17]{seg}
     \begin{itemize}
         \item This is a measure of similarity between two non-zero vectors defined in an inner product space.
         \item It doesn't depend on the magnitude of the vectors.
-        \item In informational retrieval and text mining, each document could be represented by the vector of the numbers of occurences of each work therefore cosine similarity would give a useful measure of how similar two documents are likely to be independent of the length of the documents. Presumably that would depend on how the documents/sentences/words would have been vectorized.
+        \item In informational retrieval and text mining, each document could be represented by the vector of the numbers of occurrences of each work therefore cosine similarity would give a useful measure of how similar two documents are likely to be independent of the length of the documents. Presumably that would depend on how the documents/sentences/words would have been vectorized.
     \end{itemize}
 \end{itemize}
+\end{solution}
+
+\question What is one system for incrementally classifying the maturity of different ML/AI integrations?
+\begin{solution}
+    \item You can use ML Technology Readiness Levels \cite{natureTechnologyReadiness}.
 \end{solution}
 \end{questions}
 
@@ -149,7 +154,7 @@ Describe properties of both and give examples.
 \begin{solution}
 Relational database and document database definitions:
 \begin{itemize}
-    \item A relational database is based on a relational document model where data is organised into relations, also known as tables, and each relation is an unordered collection of tuples. The data is normalised in order to minimise the number of locations different data might need to be updated. An example is Postgres.
+    \item A relational database is based on a relational document model where data is organised into relations, also known as tables, and each relation is an unordered collection of tuples. The data is normalised in order to reduce the number of locations where different data might need to be updated. An example of a relational database is Postgres.
     \item Document database stores nested records. An example is Elasticsearch.
 \end{itemize}
 Here are some ways they can be compared:
@@ -166,8 +171,8 @@ Here are some ways they can be compared:
 \question What properties does an ACID transaction have?
 \begin{solution}
 \begin{itemize}
-    \item Atomicity. Transactions are often composed of multiple statements. Atomicity guarantees that each statement is treated as a single unit, which either succeeds or fails completedly. If any of the statements in a transaction fail then the entire transaction fails. This prevents partial updates.
-    \item Consistency. Consistentcy ensures that a transaction can only bring the database from one consistent state to another, preserving database invariants.
+    \item Atomicity. Transactions are often composed of multiple statements. Atomicity guarantees that each statement is treated as a single unit, which either succeeds or fails completely. If any of the statements in a transaction fail then the entire transaction fails. This prevents partial updates.
+    \item Consistency. Consistency ensures that a transaction can only bring the database from one consistent state to another, preserving database invariants.
     \item Isolation. Isolation ensures that concurrent execution of transactions leaves the database in the same state that would have been obtained if the transactions were executed sequentially.
     \item Durability. Durability guarantees that once a transaction has been committed, it will remain committed even in the case of a system failure. This usually means that only completed transactions (or effects) are recorded in non-volatile memory.
 \end{itemize}
@@ -197,7 +202,7 @@ Here are some ways they can be compared:
     \item Purpose and use case: What purpose and use case the data will be used for?
     \item Update pattern: Is the abstraction optimized for bulk updates, streaming inserts, or upserts?
     \item Cost: What are the direct and indirect financial costs? Time to value? The opportunity costs?
-    \item Seperate storage and compute: The trend is toward seperating storage and compute but most systems hybridize seperation and colocation. This means that the lines between OLAP databases and data lakes are blurring.
+    \item Separate storage and compute: The trend is toward separating storage and compute but most systems hybridize separation and colocation. This means that the lines between OLAP databases and data lakes are blurring.
 \end{itemize}
 Reference \cite[p.~219]{fode}
 \end{solution}
@@ -221,10 +226,10 @@ Reference \cite[p.~219]{fode}
 
 \begin{solution}
 \begin{itemize}
-\item The \textit{data lake} was concieved of as a massive store where data was retained in raw, unprocessed form.
+\item The \textit{data lake} was conceived of as a massive store where data was retained in raw, unprocessed form.
 \item The last 5 years has seen two major developments:
 \begin{enumerate}
-    \item A migration towards sepeartion of compute and storage.
+    \item A migration towards separation of compute and storage.
     \item Discovery that functionality such as schema management dismissed in the move to data lakes was, in face, extremely useful.
 \end{enumerate}
 \end{itemize}
@@ -243,12 +248,20 @@ Reference \cite[p.~220]{fode}.
 \begin{questions}
 \question[1] What is docker?
 \begin{solution}
+\begin{itemize}
+    \item Docker is the original solution for building reproducible environments for running code.
+    \item Docker uses the kernel of the host system to run tasks. 
+\end{itemize}
+\end{solution}
 
+\question[2] What is a distroless image?
+\begin{solution} 
+\item A distroless image is an OCI compliant image that only contains what is necessary to run an application. I.e. it is shipped without a distribution.
 \end{solution}
 
 \question[1] What is terraform?
 \begin{solution}
-
+Terraform is a solution for Infrastructure as Code. AWS has CloudFront.
 \end{solution}
 \end{questions}
 

@@ -217,6 +217,14 @@
       \endverb
       \warn{\item online entry 'Hackr23' (references.bib): Invalid format '30/10/2023' of date field 'urldate' - ignoring}
     \endentry
+    \entry{natureTechnologyReadiness}{misc}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.nature.com/articles/s41467-022-33128-9}}
+      \field{note}{[Accessed 05-06-2024]}
+      \field{title}{{T}echnology readiness levels for machine learning systems - {N}ature {C}ommunications --- nature.com}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
