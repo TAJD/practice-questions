@@ -15,7 +15,7 @@ $(practice-technical-questions-answers):
 
 .PHONY: all clean
 
-all: $(technical-questions) $(practice-technical-questions) $(practical-technical-questions-answers)
+all: $(technical-questions) $(practice-technical-questions) $(practice-technical-questions-answers)
 
 clean:
 	latexmk -c practice-technical-questions-answers.tex
